@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plant_app/screens/home/components/title_with_more_btn.dart';
 
 import 'header_with_search_box.dart';
 
@@ -11,7 +12,11 @@ class Body extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: <Widget>[
-          HeaderWithSearchBox(size: size)
+          HeaderWithSearchBox(size: size),
+          TitleWithMoreBtn(
+            title: 'Recommended', 
+            press: () {},
+          ),
         ],
       ),
     );
